@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!-- Import da taglib -->
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>    
 <!DOCTYPE html>
@@ -12,15 +12,15 @@
 
 	<form action="/bookstrore/produtos" method="POST">
 		<div>
-			<label>TÌtulo</label>
+			<label>T√≠tulo</label>
 			<input type="text" name="titulo" />
 		</div>
 		<div>
-			<label>DescriÁ„o</label>
+			<label>Descri√ß√£o</label>
 			<input type="text" name="descricao" />
 		</div>
 		<div>	
-			<label >Pn·ginas</label>
+			<label >Pn√°ginas</label>
 			<input type="text" name="paginas" />
 		</div>		
 		

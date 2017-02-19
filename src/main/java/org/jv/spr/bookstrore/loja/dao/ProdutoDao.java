@@ -1,5 +1,7 @@
 package org.jv.spr.bookstrore.loja.dao;
 
+import java.util.List;
+
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
@@ -17,6 +19,11 @@ public class ProdutoDao {
 	public void gravar(Produto produto){
 //		entityManager.persist(produto);
 		entityManager.merge(produto);
+	}
+
+	public List<Produto> listar() {
+		List<Produto> list = entityManager.createQuery("select p from Produto p",Produto.class).getResultList();
+		return list;
 	}
 	
 }

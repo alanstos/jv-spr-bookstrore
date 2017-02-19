@@ -1,22 +1,22 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>aqui é a home do bookstrore</h1>
+	<h1>aqui Ã© a home do bookstrore</h1>
 	
 	<hr>
 	
 	<table>
 	    <tr>
-	        <td>TDD na Prática - JAVA</td>
+	        <td>TDD na PrÃ¡tica - JAVA</td>
 	        <td>Google Android</td>
-	        <td>Certificação OCJP</td>
-	        <td>Java 8 Prático</td>
+	        <td>CertificaÃ§Ã£o OCJP</td>
+	        <td>Java 8 PrÃ¡tico</td>
 	    </tr>
 	</table>	
 </body>

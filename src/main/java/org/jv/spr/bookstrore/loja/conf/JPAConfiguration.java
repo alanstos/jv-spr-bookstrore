@@ -40,7 +40,7 @@ public class JPAConfiguration {
 		dataSource.setUsername("root");
 		dataSource.setPassword("root");
 		dataSource.setUrl("jdbc:mysql://localhost:3306/livraria?useTimezone=true&serverTimezone=UTC");
-		dataSource.setDriverClassName("com.mysql.jdbc.Driver");
+		dataSource.setDriverClassName("com.mysql.jdbc.Driver"); //TODO com.mysql.cj.jdbc.Driver
 		return dataSource;
 	}
 	
