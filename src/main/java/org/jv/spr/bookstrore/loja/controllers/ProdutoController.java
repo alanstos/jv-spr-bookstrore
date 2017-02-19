@@ -2,9 +2,11 @@ package org.jv.spr.bookstrore.loja.controllers;
 
 import org.jv.spr.bookstrore.loja.dao.ProdutoDao;
 import org.jv.spr.bookstrore.loja.model.Produto;
+import org.jv.spr.bookstrore.loja.model.TipoPrecoEnum;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class ProdutoController {
@@ -16,11 +18,14 @@ public class ProdutoController {
 	
 	
 	@RequestMapping("/form")
-	public String form(){
+	public ModelAndView form(){
 		
 		System.out.println("entrou no form");
 		
-		return "produto/form";
+        ModelAndView modelAndView = new ModelAndView("produto/form");
+        modelAndView.addObject("tipos", TipoPrecoEnum.values());		
+		
+		return modelAndView;
 	}
 	
 	@RequestMapping("/form/produto")
